@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akhil Surya Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="intro">
+      <h1>Akhil Surya</h1>
+      <p>Automotive Component Design and Development Engineer with over <strong>7 years of experience</strong>. Currently working with <strong>AVL Powertrain UK</strong> at Jaguar Land Rover.</p>
+      <p class="subtext">Specialized in Busbar design, HV plastics, DFMEA, DRBFM, and component release workflows.</p>
+    </section>
+
+    <section class="companies">
+      <h2>Companies & Clients</h2>
+      <div class="logos">
+        <div><img src="assets/avl.png" alt="AVL Powertrain"/><p>AVL Powertrain UK - Client: JLR</p></div>
+        <div><img src="assets/tataelxsi.png" alt="TATA Elxsi"/><p>TATA Elxsi - Client: JLR</p></div>
+        <div><img src="assets/sansera.png" alt="Sansera"/><p>Sansera - Clients: Triumph, Piaggio</p></div>
+        <div><img src="assets/saaab.png" alt="SA AAB"/><p>SA AAB Engineering</p></div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="accordion">
+        <button class="accordion-toggle">Busbar and HV Plastics Design - JLR</button>
+        <div class="panel"><p>Led the design, validation, and release of busbars and HV plastic carriers for EV batteries.</p></div>
+
+        <button class="accordion-toggle">Plastic Insulation Brackets - JLR</button>
+        <div class="panel"><p>Developed plastic brackets for busbar insulation during welding operations.</p></div>
+
+        <button class="accordion-toggle">New Product Development - Sansera</button>
+        <div class="panel"><p>Managed gear system projects for Triumph and Piaggio, handling planning, budget, and process engineering.</p></div>
+
+        <button class="accordion-toggle">PED Documentation & Design - SA AAB</button>
+        <div class="panel"><p>Oversaw PED and PPAP documentation, part modeling, and technical communication.</p></div>
+      </div>
+    </section>
+  </div>
+
+<script>
+  const toggles = document.querySelectorAll('.accordion-toggle');
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const panel = toggle.nextElementSibling;
+      panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+</body>
+</html>

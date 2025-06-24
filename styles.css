@@ -1,0 +1,49 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+.intro h1 {
+  font-size: 2.5rem;
+}
+.intro .subtext {
+  color: #555;
+}
+.companies .logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.companies .logos div {
+  width: 200px;
+  text-align: center;
+}
+.companies img {
+  max-height: 50px;
+  margin-bottom: 5px;
+}
+.accordion-toggle {
+  background-color: #e2e6ea;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.panel {
+  display: none;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-left: 3px solid #007bff;
+}
