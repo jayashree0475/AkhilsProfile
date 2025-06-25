@@ -4,46 +4,299 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Akhil Surya Portfolio</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
   <div class="container center-content">
-    <section class="profile">
-      <img src="assets/profile.png" alt="Akhil Surya" class="profile-pic"/>
-      <h2 class="profile-name">Akhil Surya</h2>
+    <section class="profile" style="display: flex; flex-direction: column; align-items: center; justify-content: center;"></section>
+      <img src="/assets/images/Profile picture.PNG" alt="Akhil Surya" class="profile-pic" style="margin-bottom: 16px;"/>
+    
     </section>
     <section class="intro">
       <h1>Hi, I'm Akhil Surya</h1>
-      <p class="catchy">Driven automotive engineer blending innovation with hands-on design to shape the future of electric vehicles.</p>
-      <p class="subtext">With over <strong>7 years of experience</strong>, I specialize in Busbar design, HV plastics, DFMEA, DRBFM, testing, and stakeholder collaboration. Currently contributing at <strong>AVL Powertrain UK</strong> with Jaguar Land Rover.</p>
+      <p style="font-family: 'Roboto Slab', Georgia, serif;">I'm an automotive engineer with a passion for robust design and innovation. I enjoy turning ideas into real, working solutions — especially in the growing world of electric vehicles.</p>
+      <p style="font-family: 'Roboto Slab', Georgia, serif;">With over <strong>7 years of experience</strong>, I specialize in Component design and development , HV plastics, DFMEA, DRBFM, testing, and stakeholder collaboration. Currently contributing at <strong>AVL Powertrain UK</strong> with Jaguar Land Rover.</p>
     </section>
 
+    <hr class="section-divider">
     <section class="companies">
-      <h2>Companies I've Worked With</h2>
+      <h2 class="companies-heading">Companies I've Worked With</h2>
       <div class="logos">
-        <div><img src="assets/avl.png" alt="AVL Powertrain"/></div>
-        <div><img src="assets/tataelxsi.png" alt="TATA Elxsi"/></div>
-        <div><img src="assets/sansera.png" alt="Sansera"/></div>
+        <div><img src="/assets/images/AVL_Power_Train.png" alt="AVL Powertrain"/></div>
+        <div><img src="/assets/images/Tata Elexsi logo.png" alt="TATA Elxsi"/></div>
+        <div><img src="/assets/images/sansera engineering logo.png" alt="Sansera"/></div>
       </div>
-      <p class="statement">I’ve had the privilege of working with industry leaders like AVL, Tata Elxsi, and Sansera Engineering on cutting-edge projects for global clients.</p>
+      <p class="companies-statement">I’ve had the privilege of working with industry leaders like <strong>AVL</strong>, <strong>Tata Elxsi</strong>, and <strong>Sansera Engineering</strong> on cutting-edge projects for global clients.</p>
     </section>
-
-    <section class="projects">
-      <h2>Project Experience</h2>
-      <div class="accordion">
-        <button class="accordion-toggle">Busbar and HV Plastics Design - JLR</button>
-        <div class="panel"><p>Led the design, validation, and release of busbars and HV plastic carriers for EV batteries.</p></div>
-
-        <button class="accordion-toggle">Plastic Insulation Brackets - JLR</button>
-        <div class="panel"><p>Developed plastic brackets for busbar insulation during welding operations.</p></div>
-
-        <button class="accordion-toggle">New Product Development - Sansera</button>
-        <div class="panel"><p>Managed gear system projects for Triumph and Piaggio, handling planning, budget, and process engineering.</p></div>
-
-        <button class="accordion-toggle">PED Documentation & Design - SA AAB</button>
-        <div class="panel"><p>Oversaw PED and PPAP documentation, part modeling, and technical communication.</p></div>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Slab:wght@400&display=swap');
+      .section-divider {
+        border: none;
+        border-top: 3px solid #0077b6;
+        margin: 48px 0 32px 0;
+        width: 80%;
+      }
+      .companies-heading {
+        font-family: Arial;
+        font-size: 2em;
+        color: #023e8a;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .companies-statement {
+        font-family: 'Roboto Slab', Georgia, serif;
+        font-size: 1.1em;
+        color: #333;
+        margin-top: 18px;
+        text-align: center;
+      }
+      .companies .logos {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+      }
+      .companies .logos img {
+        max-height: 60px;
+        max-width: 140px;
+        object-fit: contain;
+        filter: drop-shadow(0 2px 6px #bbb);
+        background: #fff;
+        border-radius: 8px;
+        padding: 8px 12px;
+        transition: transform 0.2s;
+      }
+      .companies .logos img:hover {
+        transform: scale(1.08);
+        box-shadow: 0 4px 16px #90e0ef55;
+      }
+    </style>
+    <style>
+      .projects-section {
+        background: #f6faff;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px #b6e0f855;
+        padding: 40px 24px 32px 24px;
+        margin: 48px auto 48px auto;
+        max-width: 900px;
+        width: 90%;
+      }
+      .projects-heading {
+        font-family: Arial;
+        font-size: 2em;
+        color: #023e8a;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    </style>
+    <style>
+      .skills-section,
+      .projects-section,
+      .contact-form-section {
+        max-width: 1100px !important;
+        width: 98% !important;
+      }
+    </style>
+    <section class="clients-section" style="background: #f6faff; border-radius: 18px; box-shadow: 0 4px 24px #b6e0f855; padding: 40px 24px 32px 24px; margin: 48px auto 48px auto; max-width: 900px; width: 90%;">
+      <h2 class="projects-heading">Clients Worked With</h2>
+      <div class="clients-logos" style="display: flex; flex-direction: column; gap: 32px; align-items: center;">
+        <div style="display: flex; justify-content: center; gap: 48px;">
+          <img src="assets/images/jlr_logo.png" alt="Client 1" class="Zoomable" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+          <img src="assets/images/BMW_logo.jpeg" alt="Client 2" class="Zoomable" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+          <img src="assets/images/maserati_logo.png" alt="Client 3" class="Zoomable" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 48px;">
+          <img src="assets/images/ferari_logo.png" alt="Client 4" class="Zoomable" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+          <img src="assets/images/triumph_logo.png" alt="Client 5" class="Zoomable" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+          
+        </div>
       </div>
+      <style>
+        .clients-section .Zoomable:hover {
+          transform: scale(1.12);
+          z-index: 2;
+          box-shadow: 0 6px 24px #90e0ef88;
+          cursor: pointer;
+        }
+      </style>
     </section>
+    <script>
+      const clientZoomables = document.querySelectorAll('.clients-section .Zoomable');
+      clientZoomables.forEach(img => {
+        img.addEventListener('click', () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+      });
+    </script>
+    <div class="projects-section">
+      <section class="projects">
+        <h2 class="projects-heading">Project Experience</h2>
+        <div class="accordion">
+          <button class="accordion-toggle" style="
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            text-shadow: 2px 2px 4px #aaa, 0 1px 0 #fff; 
+            letter-spacing: 1px;
+          ">Busbar and HV Plastics Design -JLR (AVL) </button>
+          <div class="panel"><p>Led the design, validation, and release of busbars and HV plastic carriers for EV batteries.</p>
+          <div class="image-row">
+                  <img src=" assets/images/speira-busbars-02-1024x615.webp" alt="Sansera Image 1" class="zoomable"/>
+                  <img src="assets/images/Battery pack stack.webp" alt="Sansera Image 2" class="zoomable"/>
+                  <img src="assets/images/EV2.jpg" alt="Sansera Image 3" class="zoomable"/>
+          </div>
+          </div>
+          <button class="accordion-toggle" style="
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            text-shadow: 2px 2px 4px #aaa, 0 1px 0 #fff; 
+            letter-spacing: 1px;
+          ">Plastic Insulation Brackets - JLR - ( Tata Elxsi )</button>
+          <div class="panel"><p>Developed plastic brackets for busbar insulation during welding operations.</p>
+          <div class="image-row">
+                  <img src="assets/images/Battery pack stack.webp" alt="Sansera Image 1" class="zoomable"/>
+                  <img src="assets/images/Lanxess-PBT-770x400.webp" alt="Sansera Image 2" class="zoomable"/>
+                  <img src="assets/images/NW18 Tata elxsi.PNG" alt="Sansera Image 3" class="zoomable"/>
+          </div>
+          </div>
+          <button class="accordion-toggle" style="
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            text-shadow: 2px 2px 4px #aaa, 0 1px 0 #fff; 
+            letter-spacing: 1px;
+          ">Design & Development - Sansera</button>
+          <div class="panel"><p>Managed gear system projects for Triumph and Piaggio, handling planning, budget, and process engineering.</p>
+           <div class="image-row">
+          <img src="assets/images/Sansera 1.PNG" alt="Sansera Image 1" class="zoomable"/>
+          <img src="assets/images/Sansera 2.PNG" alt="Sansera Image 2" class="zoomable"/>
+          <img src="assets/images/Sansera 3.PNG" alt="Sansera Image 3" class="zoomable"/>
+          </div>
+        </div>
+          <button class="accordion-toggle" style="
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            text-shadow: 2px 2px 4px #aaa, 0 1px 0 #fff; 
+            letter-spacing: 1px;
+          ">Design & Development - SAAAB</button>
+          <div class="panel"><p>Oversaw PED and PPAP documentation, part modeling, and technical communication.</p>
+          <div class="image-row">
+          <img src="assets/images/Saab 1.jpg" alt="SAAB Image 1" class="zoomable"/>
+          <img src="assets/images/Saab 2.jpg" alt="SAAB Image 2" class="zoomable"/>
+          <img src="assets/images/SAAB 3.jpg" alt="SAAB Image 3" class="zoomable" />
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="skills-section" style="background: #f6faff; border-radius: 18px; box-shadow: 0 4px 24px #b6e0f855; padding: 40px 24px 32px 24px; margin: 48px auto 48px auto; max-width: 1000px; width: 100%;">
+      <h2 class="projects-heading">Skills</h2>
+      <div class="skills-images" style="display: flex; flex-direction: column; align-items: center; gap: 32px; margin-top: 32px;">
+        <div style="display: flex; justify-content: center; gap: 48px;">
+          <img src="assets/images/CATIA V6_convert_png.png" alt="Skill 1" class="zoomable" style="width: 150px; height: 150px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+          <img src="assets/images/8D.jpg" alt="Skill 2" class="zoomable" style="width: 150px; height: 150px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+          <img src="assets/images/Agile-Project-Management-1.jpg" alt="Skill 3" class="zoomable" style="width: 150px; height: 150px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 48px;">
+          <img src="assets/images/APQP.JPG" alt="Skill 4" class="zoomable" style="width: 150px; height: 150px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+          <img src="assets/images/FMEA.png" alt="Skill 5" class="zoomable" style="width: 150px; height: 150px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+          <img src="assets/images/Supplier Development.JPG" alt="Skill 6" class="zoomable" style="width: 150px; height: 150px; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px #b6e0f855; transition: transform 0.25s;"/>
+        </div>
+      </div>
+      <style>
+        .skill-zoom:hover {
+          transform: scale(1.12);
+          z-index: 2;
+          box-shadow: 0 6px 24px #90e0ef88;
+        }
+      </style>
+    </section>
+ <br>
+      <br>
+      <br> <br>
+      <style>
+        body {
+          position: relative;
+          min-height: 100vh;
+          z-index: 0;
+        }
+        body::before {
+          content: "";
+          position: fixed;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background-image: url('assets/images/EV-Vehicle-Background-1.jpeg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center center;
+          opacity: 0.18; /* Adjust this value for more/less fade */
+          z-index: -1;
+          pointer-events: none;
+        }
+      </style>
+
+<section class="achievements-section">
+  <h2 class="projects-heading">My Achievements</h2>
+  <div class="accordion">
+    <button class="accordion-toggle" style="
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      font-weight: bold; 
+      font-size: 1.2em; 
+      text-shadow: 2px 2px 4px #aaa, 0 1px 0 #fff; 
+      letter-spacing: 1px;
+    ">
+          Certificates
+        </button>
+        <div class="panel">
+        <div class="image-row">
+          <div>
+          <h2>Lean Six Sigma Yellow Belt Certification</h2>
+                <img src="assets/images/1223 Akhil YB Certificate (2)_page-0001.jpg" alt="Sansera Image 1" class="zoomable"/>
+                </div>
+                <div>
+                <h2>Certified Scrum Master (CSM) - 2025</h2>
+                <img src="assets/images/Akhil Surya CSM Certificate.png" alt="Sansera Image 2" class="zoomable"/>
+                </div>
+                <div>
+                <h2>Certified IATF 16949:2016 Internal Auditor - 2021</h2>
+                <img src="assets/images/Akhil Surya IATF Certificate_page-0001.jpg" alt="Sansera Image 3" class="zoomable"/>
+                </div>
+                <div>
+                <h2>PMP Certification (In Progress)</h2>
+                <img src="assets/images/PMP Certification.png" alt="Sansera Image 3" class="zoomable"/>
+                </div
+        </div>
+        </div>
+   </section>
+   <br>
+  <hr class="section-divider">
+
+
+    <section class="contact">
+        <h2 class="projects-heading">You Can Find Me Here</h2>
+        <p>📧 <a href="mailto:akhilj889@gmail.com">akhilj889@gmail.com</a></p>
+        <p>🔗 <a href="https://linkedin.com/in/akhil-surya-25276a16a/" target="_blank">linkedin.com/in/akhilsurya</a></p>
+        <br>
+        <br>
+        <br>
+      </section>
+  </section>
   </div>
 
 <script>
@@ -55,5 +308,34 @@
     });
   });
 </script>
+<div id="imgModal" class="modal">
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+  const zoomables = document.querySelectorAll('.zoomable');
+
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  modal.addEventListener('click', () => {
+    modal.style.display = "none";
+  });
+</script>
+
+<!-- <div class="chat-button">
+      <a href="https://chatgpt.com/g/g-685bd44e53ac8191bf917030828075b6-akhil-personal-gpt" target="_blank">
+        💬 Chat with My Assistant
+      </a>
+    </div> -->
+
 </body>
 </html>
+
+
